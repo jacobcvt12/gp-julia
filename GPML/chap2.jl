@@ -6,7 +6,7 @@ srand(1)
 # sample from gaussian process
 
 # covariate
-x_star = -5:0.1:5
+x_star = -5:0.01:5
 
 # squared exponential covariance function
 K_psd = exp(-0.5 * pairwise(SqEuclidean(), x_star'))
