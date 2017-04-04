@@ -26,4 +26,4 @@ gp_draws = DataFrame(f_star)
 gp_draws[:x_star] = x_star
 gp_draws = stack(gp_draws, [:x1, :x2, :x3], [:x_star])
 
-plot(gp_draws, x="x_star", y="value", Geom.point)
+plot(gp_draws, x="x_star", y="value", color="variable", Geom.line)
